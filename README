@@ -1,0 +1,22 @@
+TypoPluginContactForm
+=====================
+
+Just a proof of concept for the new plugin integration into admin
+
+
+Example
+=======
+
+You can access form using: http://<yourblog>/contact_form
+Administration: http://<yourblog>/admin/contact_form
+
+TODO: a lot
+===========
+* send emails
+* form style
+* connect to Akismet
+* delete messages
+* clean the code
+* dashboard integration
+
+Copyright (c) 2010 Frédéric de Villamil, released under the MIT license
