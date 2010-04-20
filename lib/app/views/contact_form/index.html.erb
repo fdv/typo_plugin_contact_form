@@ -1,0 +1,23 @@
+<h2>Contact</h2>
+
+<%= render_the_flash %>
+
+<% form_tag(:controller => 'contact_form') do %>
+  <p>
+    <label>Your Name</label><br />
+    <%= text_field 'contact_form', 'name'%>
+  </p>
+  <p>
+    <label>Email Address</label><br />
+    <%= text_field 'contact_form', 'email'%>
+  </p>
+  <p>
+    <label>Address</label><br />
+    <%= text_field 'contact_form', 'address'%>
+  </p>
+  <p>
+    <label>Message</label><br />
+    <%= text_area 'contact_form', 'message'%>
+  </p>
+  <p><%= submit_tag('save')%></p>
+<% end %>

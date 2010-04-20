@@ -1,0 +1,23 @@
+<% @page_heading = _('Contact Form Admin') %>
+
+<% subtabs_for(:themes) %>
+
+<table>
+  <tr>
+    <th>From</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Message</th>
+    <th>Posted at</th>
+  </tr>
+<%= render_void_table(@messages.size, 7)  %>
+<% @messages.each do |message| %>
+  <tr>
+    <td><%= message.name %></td>
+    <td><%= message.email %></td>
+    <td><%= message.address %></td>
+    <td><%= message.message %></td>
+    <td><%= format_date message.created_at %></td>
+  </tr>
+<% end %>
+</table>
